@@ -85,7 +85,7 @@ const deleteTeacher = async (id) => {
             .raw(sql, [id])
             .then(() => {
                 resolve({status: "Successfully deleted Teacher"})
-            }
+            })
             .catch((error) => {
                 reject(error);
             });
